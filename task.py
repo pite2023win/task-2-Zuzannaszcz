@@ -65,6 +65,5 @@ if __name__ == "__main__":
   print("do you want add any person to a bank? type: yes or no")
   answer = input()
   while answer == "yes":
-    print(f"name of a bank? you can choose from{}")
     print("do you want to add another one? type: yes or no")
     answer = input()
