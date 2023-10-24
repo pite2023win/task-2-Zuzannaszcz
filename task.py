@@ -24,3 +24,47 @@
 #
 #Delete these comments before commit!
 #Good luck.
+
+class Bank:
+  def __init__(self, people_list ):
+    self.people_list = people_list
+
+class Person:
+  def __init__(self, name, money ):
+    self.name = name
+    self.money = money
+
+if __name__ == "__main__":
+
+  print("do you want to create a bank? type: yes or no")
+  answer = input()
+  while answer == "yes":
+    print(f"chose the name of a bank")
+    bank_name = input()
+    bank_name = Bank([])
+    print("do you want to create another one? type: yes or no")
+    answer = input()
+
+  print("do you want to create a person? type: yes or no")
+  answer = input()
+  while answer == "yes":
+    print(f"chose the name of a person")
+    person_name = input()
+    print(f"amount of money?")
+    money = input()
+    person_name = Person(person_name, money)
+    print("do you want to create another one? type: yes or no")
+    answer = input()
+
+  print(f"chose the name of a person")
+  person_name = input()
+  print(f"amount of money?")
+  money = input()
+  person_name = Person(person_name, money)
+
+  print("do you want add any person to a bank? type: yes or no")
+  answer = input()
+  while answer == "yes":
+    print(f"name of a bank? you can choose from{}")
+    print("do you want to add another one? type: yes or no")
+    answer = input()
